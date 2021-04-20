@@ -40,11 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # extern app
     'rest_framework',
     'corsheaders',
-
-    # api app
     'api',
 
 ]
@@ -96,7 +93,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # impletation cors policy
+
     'corsheaders.middleware.CorsMiddleware'
 ]
 
@@ -177,6 +174,6 @@ STATIC_URL = '/static/'
 CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
-       'http://localhost:3000',
+    'http://localhost:3000',
 )
 

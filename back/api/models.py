@@ -78,7 +78,7 @@ class UserProfile(models.Model):
 class Order(models.Model):
     """ Define Order class"""
 
-    id_order = models.AutoField(primary_key=True)
+    id_o = models.AutoField(primary_key=True)
     date_o = models.DateTimeField(auto_now_add=True)
     total = models.FloatField()
     subtotal = models.FloatField()
@@ -92,7 +92,7 @@ class Order(models.Model):
 class Shipping(models.Model):
     """ Define UserProfile class"""
 
-    id_shipping = models.AutoField(primary_key=True)
+    id_s = models.AutoField(primary_key=True)
     address = models.CharField(max_length=20)
     city = models.CharField(max_length=20)
     state = models.CharField(max_length=20)
@@ -106,7 +106,7 @@ class Shipping(models.Model):
 class Payment(models.Model):
     """ Define UserProfile class"""
 
-    id_payment = models.AutoField(primary_key=True)
+    id_p = models.AutoField(primary_key=True)
     date_p = models.DateTimeField(auto_now_add=True)
     taxes = models.FloatField()
     total = models.FloatField()
